@@ -4,17 +4,16 @@ I have a very annoying parrot which screams almost all day and drives my family 
 
 If he screams continuously a curtain will drop down and it will cover the parrot’s cage and a calming music will be played on my mobile phone. After several minutes the curtain will rise up and everything will be back to normal.
 
-A showcase of the result:
-TODO:
+A showcase of the result:</br>
+![Screenshot](/showcase-pics/curtain-down.gif)            ![Screenshot](/showcase-pics/curtain-up.gif) 
 
 
-This project consists of several things:
--Raspberry PI zero 
--Step motor
--Mobile Phone
--Curtain mechanism
-
-
+This project consists of several components:
+* Raspberry PI zero with Python service for classification of audio sounds
+* Step motor
+* Mobile Phone which sends the realtime recorded audio to the PI zero and plays calming sounds if the bird is screaming
+* Curtain mechanism
+- - - -
 More detailed and visual  representation of the project:
 
-TODO:
+![Screenshot](/showcase-pics/parrot-app-architecture.png)
