@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Audio recorder</title>
+    <script src="static/constants.js"></script>
+  </head>
+  <body id="wrapper" style="width:100%;height:100vh">
+  <button id="start-rec-btn"  type="button" style="width:100%;height:33%;font-size : 40px;background-color: #008CBA;color:#ffffff"></button>
+  <!--<button id="stop-rec-btn"> Stop Recording</button>-->
+  <div style="height:33%;width:100%">
+      <select id="time-picker" style="float:left;height:100%;width:50%;font-size:50px;text-align:center">
+         <option value="5">5 min</option>
+         <option value="10">10 min</option>
+         <option value="15">15 min</option>
+         <option value="30">30 min</option>
+</select>
+      <button id="scheduled-play-btn"  style="height:100%;width:50%;font-size:40px;background-color: #008CBA;color:#ffffff" onclick="startScheduledPlaying();">Start Timer</button>
+ </div>
+
+  <button id="result-btn" style="height:33%;width:100%">   </button>
+  <audio autoplay></audio>
+  <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+  <script src="static/audio-recorder.js"></script>
+  <script src="static/scheduled-audio-player.js"></script>
+  </body>
+</html>
+

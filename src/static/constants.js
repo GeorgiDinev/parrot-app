@@ -1,0 +1,6 @@
+SERVER_SOCKET = "192.168.1.198:5005";
+UPLOAD_ROUTE = "/upload_file";
+SOUND_NAMES_URL = "/soundNames";
+
+GRAY_COLOR = "#555555";
+BLUE_COLOR = "#008CBA";
