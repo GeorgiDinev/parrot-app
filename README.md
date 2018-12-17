@@ -18,5 +18,5 @@ More detailed and visual  representation of the project:
 
 ![Screenshot](/showcase-pics/parrot-app-architecture.png)
 
-To start the flask server and the whole project type:
+To start the flask server and the whole project type:</br>
 python parrot_service.py
