@@ -49,8 +49,6 @@ def upload_file():
     result = is_parrot_screaming(audio, sample_rate)
     if result:
        return  manager.onParrotScream()
-    
-    #print("Is parrot screaming: ", result)
     return jsonify(is_parrot_screaming=result)
 
 
@@ -63,7 +61,7 @@ def get_all_sounds():
 def is_parrot_screaming(audio, sample_rate):
     min_number_of_screams = 3
     if audio.shape[0] == 0:
-        return
+        return False
     min_peak_val = 12000
     focus_size = int(0.23 * sample_rate)
 
@@ -109,5 +107,5 @@ def is_parrot_screaming(audio, sample_rate):
 
 if __name__ == '__main__':
     app.debug = True
-    app.run(host='0.0.0.0', port=5005)
+    app.run(host='0.0.0.0', port=5005, threaded= True)
 
